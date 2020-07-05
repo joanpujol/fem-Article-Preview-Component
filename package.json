@@ -19,5 +19,6 @@
   "homepage": "https://github.com/joanpujol/fem-Article-Preview-Component#readme",
   "devDependencies": {
     "node-sass": "^4.14.1"
-  }
+  },
+  "dependencies": {}
 }
