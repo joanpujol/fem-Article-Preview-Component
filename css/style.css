@@ -60,25 +60,35 @@ body {
           color: #48556a; }
         .article-preview__social-publication-info-text-date {
           color: #9eafc2; }
-  .article-preview__share {
-    align-self: center; }
-    .article-preview__share-container {
-      height: 2.2em;
-      width: 2.2em;
-      border-radius: 100%;
-      background-color: #ecf2f8; }
-      .article-preview__share-container > img {
-        transform: translate(50%, 40%); }
-
-#article__footer-check:checked ~ .hide-target {
-  display: none; }
-
-#article__footer-check:checked ~ .show-target {
-  display: block;
-  background-color: red; }
-
-.show-target {
-  display: none; }
+    .article-preview__social-active {
+      padding-top: 1em;
+      background-color: #48556a;
+      border-bottom-left-radius: 2%;
+      border-bottom-right-radius: 2%; }
+  .article-preview__share-options {
+    display: flex; }
+  .article-preview__social-name {
+    letter-spacing: 0.5rem;
+    align-self: center;
+    color: #6d7f97;
+    font-weight: 700; }
+  .article-preview__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .article-preview__list > li {
+      margin-left: 1em; }
+  .article-preview__circle-bg {
+    align-self: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 100%;
+    background-color: #ecf2f8; }
+    .article-preview__circle-bg > img {
+      transform: translate(50%, 40%); }
+    .article-preview__circle-bg--dark {
+      background-color: #6d7f97; }
 
 .attribution {
   font-size: 11px;

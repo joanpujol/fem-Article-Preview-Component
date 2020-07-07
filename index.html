@@ -24,35 +24,35 @@
         to help you make any room feel complete.
       </p>
     </div>
-    <div class="article-preview__social">
+    <div id="share-unactive" class="article-preview__social">
 
-      <input type="checkbox" id="article__footer-check">
-      <div class="article-preview__social-publication-info hide-target">
+      <div class="article-preview__social-publication-info">
         <img class="article-preview__social-publication-info-image" src="/images//avatar-michelle.jpg" alt="">
         <div class="article-preview__social-publication-info-text">
           <div class="article-preview__social-publication-info-text-name">Michelle Appleton</div>
           <div class="article-preview__social-publication-info-text-date">28 Jun 2020</div>
         </div>
-
       </div>
-      <div class="article-preview__share article-preview__share-container hide-target">
+      <div id="share-action" class="article-preview__circle-bg">
         <img src="/images/icon-share.svg" alt="">
       </div>
-      <div class="article-preview__share--active show-target">
-        <div class="article-preview__social">
+    </div>
+    <div id="share-active" class="article-preview__social-active">
+      <div class="article-preview__social">
+        <div class="article-preview__share-options">
           <span class="article-preview__social-name">SHARE</span>
           <ul class="article-preview__list">
-            <li class="article__list-item"><a href="#"><img src="/images/icon-facebook.svg" alt=""></a></li>
-            <li class="article__list-item"><a href="#"><img src="images/icon-twitter.svg" alt=""></a></li>
-            <li class="article__list-item"><a href="#"><img src="images/icon-pinterest.svg" alt=""></a></li>
+            <li><a href="#"><img src="/images/icon-facebook.svg" alt=""></a></li>
+            <li><a href="#"><img src="images/icon-twitter.svg" alt=""></a></li>
+            <li><a href="#"><img src="images/icon-pinterest.svg" alt=""></a></li>
           </ul>
         </div>
-        <div class="article__share article__share--dark">
-          <label for="article__footer-check">
-            <i class="article__share-icon fas fa-share"></i>
-          </label>
+
+        <div id="share-action-cancel" class="article-preview__circle-bg article-preview__circle-bg--dark">
+          <img src="/images/icon-share-white.svg" alt="">
         </div>
       </div>
+
     </div>
   </div>
 
@@ -62,4 +62,5 @@
   </div>
 </body>
 
+<script src="script.js"></script>
 </html>
