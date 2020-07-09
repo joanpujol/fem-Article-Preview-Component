@@ -77,12 +77,14 @@ body {
   margin-left: auto;
   border-radius: 50%;
   background-color: #ecf2f8;
-  padding: 0.5rem; }
+  height: 35px;
+  width: 35px; }
 
 .share-icon {
-  height: 15px;
+  height: 13px;
   width: 15px;
-  fill: #6d7f97; }
+  fill: #6d7f97;
+  transform: translate(70%, 60%); }
 
 .article-about {
   display: flex;

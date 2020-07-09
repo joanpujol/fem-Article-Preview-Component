@@ -100,13 +100,15 @@ body {
   margin-left: auto;
   border-radius: 50%;
   background-color: $light-grayish-blue;
-  padding: 0.5rem;
+  height: 35px;
+  width: 35px;
 }
 
 .share-icon {
-  height: 15px;
+  height: 13px;
   width: 15px;
   fill: $desaturated-dark-blue;
+  transform: translate(70%, 60%);
 }
 
 .article-about {
