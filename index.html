@@ -11,56 +11,49 @@
 </head>
 
 <body>
-  <div class="article-preview">
-    <img class="article-preview__image" src="/images/drawers.jpg" alt="">
-    <div class="article-preview__content">
-      <h3 class="article-preview__content-title">
-        Shift the overall look and feel by adding these wonderful
-        touches to furniture in your home
-      </h3>
-      <p class="article-preview__content-description">
-        Ever been in a room and felt like something was missing? Perhaps
-        it felt slightly bare and uninviting. I’ve got some simple tips
-        to help you make any room feel complete.
-      </p>
-    </div>
-    <div id="share-unactive" class="article-preview__social">
-
-      <div class="article-preview__social-publication-info">
-        <img class="article-preview__social-publication-info-image" src="/images//avatar-michelle.jpg" alt="">
-        <div class="article-preview__social-publication-info-text">
-          <div class="article-preview__social-publication-info-text-name">Michelle Appleton</div>
-          <div class="article-preview__social-publication-info-text-date">28 Jun 2020</div>
+  <div class="container">
+    <div class="article-preview">
+      <div class="article-image-box">
+        <img class="article-image" src="images/drawers.jpg" alt="Drawers image">
+      </div>
+      <div class="content">
+        <h3 class="content__title">Shift the overall look and feel by adding these wonderful
+          touches to furniture in your home
+        </h3>
+        <p class="content__description">
+          Ever been in a room and felt like something was missing? Perhaps
+          it felt slightly bare and uninviting. I’ve got some simple tips
+          to help you make any room feel complete.
+        </p>
+        <div class="content__footer">
+          <div class="author-image-box">
+            <img class="author-image" src="images/avatar-michelle.jpg" alt="Avatar Michelle">
+          </div>
+          <div class="article-about">
+            <p class="article-about__author-name">
+              Michelle Appleton
+            </p>
+            <p class="article-about__article-date">
+              28 Jun 2020
+            </p>
+          </div>
+          <div class="share-icon-box">
+            <svg class="share-icon">
+              <use xlink:href="images/icon-share.svg#arrow"></use>
+            </svg>
+          </div>
+          <!-- Share menu must go here -->
         </div>
       </div>
-      <div id="share-action" class="article-preview__circle-bg">
-        <img src="/images/icon-share.svg" alt="">
-      </div>
     </div>
-    <div id="share-active" class="article-preview__social-active">
-      <div class="article-preview__social">
-        <div class="article-preview__share-options">
-          <span class="article-preview__social-name">SHARE</span>
-          <ul class="article-preview__list">
-            <li><a href="#"><img src="/images/icon-facebook.svg" alt=""></a></li>
-            <li><a href="#"><img src="images/icon-twitter.svg" alt=""></a></li>
-            <li><a href="#"><img src="images/icon-pinterest.svg" alt=""></a></li>
-          </ul>
-        </div>
 
-        <div id="share-action-cancel" class="article-preview__circle-bg article-preview__circle-bg--dark">
-          <img src="/images/icon-share-white.svg" alt="">
-        </div>
-      </div>
-
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Juan Pujol</a>.
     </div>
-  </div>
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Juan Pujol</a>.
   </div>
 </body>
 
 <script src="script.js"></script>
+
 </html>
