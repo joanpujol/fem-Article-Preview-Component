@@ -77,14 +77,20 @@ body {
   margin-left: auto;
   border-radius: 50%;
   background-color: #ecf2f8;
-  height: 35px;
-  width: 35px; }
+  height: 30px;
+  width: 30px; }
+
+.share-icon-box:hover {
+  background-color: #6d7f97; }
+
+.share-icon-box:hover > .share-icon {
+  fill: white; }
 
 .share-icon {
   height: 13px;
   width: 15px;
   fill: #6d7f97;
-  transform: translate(70%, 60%); }
+  transform: translate(50%, 40%); }
 
 .article-about {
   display: flex;
@@ -95,3 +101,49 @@ body {
     color: #48556a; }
   .article-about__article-date {
     color: #9eafc2; }
+
+.share-tab {
+  position: absolute;
+  background-color: #48556a;
+  width: 250px;
+  padding: 1.25rem 2.25rem;
+  border-radius: 0.5rem;
+  top: 45%;
+  right: 20%;
+  display: none; }
+
+.active {
+  display: block; }
+
+.share-tab::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 3.75rem;
+  transform: translateX(-50%);
+  border: 15px solid transparent;
+  border-top-color: #48556a; }
+
+.share {
+  bottom: 200px;
+  justify-content: space-around;
+  align-items: center;
+  display: flex; }
+  .share__title {
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    color: #9eafc2; }
+  .share__icons {
+    list-style-type: none;
+    display: flex;
+    align-items: center; }
+  .share__icons > li:not(:last-child) {
+    margin-right: 15px; }
+
+.icon-element {
+  height: 20px;
+  width: 20px; }
+  .icon-element__image {
+    fill: black;
+    width: 100%;
+    height: 100%; }
