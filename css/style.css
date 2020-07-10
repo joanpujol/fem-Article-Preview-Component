@@ -82,9 +82,8 @@ body {
 
 .share-icon-box:hover {
   background-color: #6d7f97; }
-
-.share-icon-box:hover > .share-icon {
-  fill: white; }
+  .share-icon-box:hover > .share-icon {
+    fill: white; }
 
 .share-icon {
   height: 13px;
@@ -137,8 +136,8 @@ body {
     list-style-type: none;
     display: flex;
     align-items: center; }
-  .share__icons > li:not(:last-child) {
-    margin-right: 15px; }
+    .share__icons > li:not(:last-child) {
+      margin-right: 15px; }
 
 .icon-element {
   height: 20px;

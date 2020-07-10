@@ -105,10 +105,10 @@ body {
 
 .share-icon-box:hover {
   background-color: $desaturated-dark-blue;
-}
 
-.share-icon-box:hover > .share-icon {
-  fill: white;
+  & > .share-icon {
+    fill: white;
+  }
 }
 
 .share-icon {
@@ -174,10 +174,10 @@ body {
     list-style-type: none;
     display: flex;
     align-items: center;
-  }
 
-  &__icons > li:not(:last-child) {
-    margin-right: 15px;
+    & > li:not(:last-child) {
+      margin-right: 15px;
+    }
   }
 }
 
