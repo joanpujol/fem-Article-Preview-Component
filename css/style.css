@@ -33,10 +33,17 @@ body {
   margin-bottom: 4rem;
   background-color: #fff;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); }
+  @media only screen and (max-width: 900px) {
+    .article-preview {
+      margin: 30px;
+      flex-direction: column; } }
 
 .article-image-box {
   flex: 0 0 37.5%;
   display: block; }
+  @media only screen and (max-width: 900px) {
+    .article-image-box {
+      height: 225px; } }
 
 .article-image {
   height: 100%;
@@ -45,24 +52,46 @@ body {
   object-position: 15% 80%;
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem; }
+  @media only screen and (max-width: 900px) {
+    .article-image {
+      object-position: 0% 0%;
+      border-top-left-radius: 0%;
+      border-bottom-left-radius: 0%;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem; } }
 
 .content {
   display: flex;
-  flex-direction: column;
-  padding: 35px;
-  justify-content: space-between; }
+  flex-direction: column; }
   .content__title {
+    padding: 35px 35px 10px 35px;
     font-size: 1.5rem;
     line-height: 1.3;
     font-weight: 700;
     color: #48556a; }
+    @media only screen and (max-width: 900px) {
+      .content__title {
+        line-height: 1.5;
+        font-size: 1.3rem; } }
   .content__description {
+    padding: 10px 35px;
     color: #6d7f97;
     font-weight: 500; }
+    @media only screen and (max-width: 900px) {
+      .content__description {
+        line-height: 1.65;
+        font-size: 1.05rem; } }
   .content__footer {
+    padding: 10px 35px;
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    position: relative; }
+    @media only screen and (max-width: 900px) {
+      .content__footer {
+        margin-top: 10px;
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem; } }
 
 .author-image-box {
   height: 40px;
@@ -82,7 +111,7 @@ body {
 
 .share-icon-box:hover {
   background-color: #6d7f97; }
-  .share-icon-box:hover > .share-icon {
+  .share-icon-box:hover .share-icon {
     fill: white; }
 
 .share-icon {
@@ -92,8 +121,6 @@ body {
   transform: translate(50%, 40%); }
 
 .article-about {
-  display: flex;
-  flex-direction: column;
   margin-left: 1em; }
   .article-about__author-name {
     font-weight: 700;
@@ -103,13 +130,18 @@ body {
 
 .share-tab {
   position: absolute;
-  background-color: #48556a;
   width: 250px;
   padding: 1.25rem 2.25rem;
   border-radius: 0.5rem;
-  top: 45%;
-  right: 20%;
+  background-color: #48556a;
+  top: -65px;
+  right: -16%;
   display: none; }
+  @media only screen and (max-width: 900px) {
+    .share-tab {
+      border-radius: 0;
+      top: 5px;
+      left: 0; } }
 
 .active {
   display: block; }
@@ -122,6 +154,9 @@ body {
   transform: translateX(-50%);
   border: 15px solid transparent;
   border-top-color: #48556a; }
+  @media only screen and (max-width: 900px) {
+    .share-tab::after {
+      display: none; } }
 
 .share {
   bottom: 200px;
@@ -133,10 +168,10 @@ body {
     letter-spacing: 0.3rem;
     color: #9eafc2; }
   .share__icons {
-    list-style-type: none;
+    list-style: none;
     display: flex;
     align-items: center; }
-    .share__icons > li:not(:last-child) {
+    .share__icons :not(:last-child) {
       margin-right: 15px; }
 
 .icon-element {
