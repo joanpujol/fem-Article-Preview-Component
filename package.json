@@ -1,0 +1,23 @@
+{
+  "name": "fem-article-preview-component",
+  "version": "1.0.0",
+  "description": "![Design preview for the Article preview component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joanpujol/fem-Article-Preview-Component.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joanpujol/fem-Articlse-Preview-Component/issues"
+  },
+  "homepage": "https://github.com/joanpujol/fem-Article-Preview-Component#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
