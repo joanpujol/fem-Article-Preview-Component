@@ -1,65 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Manrope">
-  <link rel="stylesheet" href="./css/style.css">
-  
-  <title>Frontend Mentor | Article preview component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Manrope">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Frontend Mentor | Article preview component</title>
 </head>
 <body>
-  <div class="article">
-    <div class="article__image">
-      <img src="./images/drawers.jpg" alt="">
+<div class="wrapper">
+    <div class="article">
+        <div class="article__image">
+            <img src="./images/drawers.jpg" alt="">
+        </div>
+        <div class="article__content">
+            <div class="article__title">
+                Shift the overall look and feel by adding these wonderful
+                touches to furniture in your home
+            </div>
+            <div class="article__desc">
+                Ever been in a room and felt like something was missing? Perhaps
+                it felt slightly bare and uninviting. I’ve got some simple tips
+                to help you make any room feel complete.
+            </div>
+        </div>
+        <div class="article__author">
+            <div class="article__author-image">
+                <img src="./images/avatar-michelle.jpg" alt="">
+            </div>
+            <div class="article__meta">
+                <div class="article__author-name">
+                    Michelle Appleton
+                </div>
+                <div class="article__date">
+                    28 Jun 2020
+                </div>
+            </div>
+            <div class="article__share">
+                <svg class="article__share-image">
+                    <use xlink:href="images/icon-share.svg#share"></use>
+                </svg>
+            </div>
+        </div>
+        <div class="article__social active">
+            <p>Share</p>
+            <div class="article__social-list">
+                <svg class="article__share-facebook">
+                    <use xlink:href="images/icon-facebook.svg#facebook"></use>
+                </svg>
+                <svg class="article__share-twitter">
+                    <use xlink:href="images/icon-twitter.svg#twitter"></use>
+                </svg>
+                <svg class="article__share-pinterest">
+                    <use xlink:href="images/icon-pinterest.svg#pinterest"></use>
+                </svg>
+            </div>
+            <svg class="article__share-image--active">
+                <use xlink:href="images/icon-share.svg#share"></use>
+            </svg>
+        </div>
     </div>
-    <div class="article__content">
-      <div class="article__title">
-        Shift the overall look and feel by adding these wonderful
-        touches to furniture in your home
-      </div>
-      <div class="article__desc">
-        Ever been in a room and felt like something was missing? Perhaps
-        it felt slightly bare and uninviting. I’ve got some simple tips
-        to help you make any room feel complete.
-      </div>
-    </div>
-    <div class="article__author">
-      <div class="article__author-image">
-        <img src="./images/avatar-michelle.jpg" alt="">
-      </div>
-      <div class="article__author-name">
-        Michelle Appleton
-      </div>
-      <div class="article__date">
-        28 Jun 2020
-      </div>
-      <div class="article__share">
-        <svg class="article__share-image">
-          <use xlink:href="images/icon-share.svg#share"></use>
-        </svg>
-      </div>
-    </div>
-    <div class="article__social">
-      Share
-      <div class="article__social-list">
-        <svg class="article__share-facebook">
-          <use xlink:href="images/icon-facebook#facebook"></use>
-        </svg>
-        <svg class="article__share-twitter">
-          <use xlink:href="images/icon-twitter#twitter"></use>
-        </svg>
-        <svg class="article__share-pinterest">
-          <use xlink:href="images/icon-pinterest#pinterest"></use>
-        </svg>
-      </div>
-      <svg class="article__share-image--active">
-        <use xlink:href="images/icon-share.svg#share"></use>
-      </svg>
-    </div>
-  </div>
+</div>
 </body>
 </html>

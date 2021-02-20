@@ -16,6 +16,19 @@ $gray-blue: hsl(212, 23%, 69%);
 }
 
 body {
+  color: $dark-blue;
   font-size: 13px;
   font-family: Manrope;
+  background-color: #EDF2F8;
+  min-height: 100vh;
+}
+
+img {
+  height: 100%;
+  width: auto;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
 }
