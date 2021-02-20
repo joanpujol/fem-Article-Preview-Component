@@ -1,0 +1,21 @@
+$dark-gray-blue: hsl(217, 19%, 35%);
+$light-gray-blue: hsl(217, 19%, 35%);
+$dark-blue: hsl(214, 17%, 51%);
+$gray-blue: hsl(212, 23%, 69%);
+
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 13px;
+  font-family: Manrope;
+}
