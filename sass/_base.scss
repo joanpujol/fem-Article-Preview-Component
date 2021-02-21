@@ -16,7 +16,7 @@ $gray-blue: hsl(212, 23%, 69%);
 }
 
 body {
-  color: $dark-blue;
+  color: $light-gray-blue;
   font-size: 13px;
   font-family: Manrope;
   background-color: #EDF2F8;
@@ -36,5 +36,6 @@ img {
 @media (min-width: 720px) {
   .wrapper {
     max-width: 720px;
+    margin-top: 35vh;
   }
 }

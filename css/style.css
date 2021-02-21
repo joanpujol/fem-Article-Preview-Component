@@ -9,7 +9,7 @@
   padding: 0; }
 
 body {
-  color: #6d7f97;
+  color: #48556a;
   font-size: 13px;
   font-family: Manrope;
   background-color: #EDF2F8;
@@ -25,7 +25,8 @@ img {
 
 @media (min-width: 720px) {
   .wrapper {
-    max-width: 720px; } }
+    max-width: 720px;
+    margin-top: 35vh; } }
 
 .article {
   border-radius: 1em;
@@ -56,6 +57,7 @@ img {
     justify-content: space-between;
     align-items: center; }
   .article__author-name {
+    color: #48556a;
     font-weight: 700; }
   .article__date {
     color: #9eafc2;

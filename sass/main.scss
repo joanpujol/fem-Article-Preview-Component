@@ -22,7 +22,7 @@
   }
 
   &__title {
-    color: $light-gray-blue;
+    color: $dark-gray-blue;
     font-weight: 700;
     font-size: 1.1rem;
     margin-bottom: 1em;
@@ -45,6 +45,7 @@
   }
 
   &__author-name {
+    color: $dark-gray-blue;
     font-weight: 700;
   }
 
