@@ -59,10 +59,27 @@
     border-radius: 2em;
     position: relative;
 
-    svg {
+    &--active {
+      height: 2.5em;
+      width: 2.5em;
+      border-radius: 2em;
+      background-color: $dark-blue;
+    }
+  }
+
+  &__share-image {
+    height: 2.5em;
+    width: 2.5em;
+    position: absolute;
+    top: 0.7em;
+    left: 0.7em;
+    fill: #6E8098;
+
+    &--active {
+      fill: white;
       position: absolute;
       top: 0.7em;
-      left: 0.7em
+      left: 0.7em;
     }
   }
 
@@ -76,13 +93,21 @@
     }
   }
 
-  &__social.active {
+  &__social {
+    display: none;
+  }
 
+  &__social.active {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
     display: flex;
     padding: 0 2em;
     justify-content: space-between;
     align-items: center;
     height: 5em;
+    width: 100%;
     background-color: $dark-gray-blue;
 
     p {
@@ -90,11 +115,18 @@
       text-transform: uppercase;
       letter-spacing: 0.5em;
     }
-
-    svg {
-      fill: white;
-      height: 2.5em;
-      width: 2.5em;
-    }
   }
+
+  &__social-list {
+    height: 20px;
+    margin: 0 auto 0 1.5em;
+
+  }
+
+  &__social-item {
+    display: inline-block;
+    height: 20px;
+    width: 32.5px;
+  }
+
 }

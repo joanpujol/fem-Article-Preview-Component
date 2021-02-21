@@ -61,7 +61,20 @@ img {
     background-color: #EDF2F8;
     border-radius: 2em;
     position: relative; }
-    .article__share svg {
+    .article__share--active {
+      height: 2.5em;
+      width: 2.5em;
+      border-radius: 2em;
+      background-color: #6d7f97; }
+  .article__share-image {
+    height: 2.5em;
+    width: 2.5em;
+    position: absolute;
+    top: 0.7em;
+    left: 0.7em;
+    fill: #6E8098; }
+    .article__share-image--active {
+      fill: white;
       position: absolute;
       top: 0.7em;
       left: 0.7em; }
@@ -71,18 +84,28 @@ img {
     margin-right: 1.5em; }
     .article__author-image img {
       border-radius: 50%; }
+  .article__social {
+    display: none; }
   .article__social.active {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
     display: flex;
     padding: 0 2em;
     justify-content: space-between;
     align-items: center;
     height: 5em;
+    width: 100%;
     background-color: #48556a; }
     .article__social.active p {
       color: #9eafc2;
       text-transform: uppercase;
       letter-spacing: 0.5em; }
-    .article__social.active svg {
-      fill: white;
-      height: 2.5em;
-      width: 2.5em; }
+  .article__social-list {
+    height: 20px;
+    margin: 0 auto 0 1.5em; }
+  .article__social-item {
+    display: inline-block;
+    height: 20px;
+    width: 32.5px; }
