@@ -32,3 +32,9 @@ img {
   width: 87.5%;
   margin: 0 auto;
 }
+
+@media (min-width: 720px) {
+  .wrapper {
+    max-width: 720px;
+  }
+}
